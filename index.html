@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Laura - Desenvolvedora Front-end</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Laura Pechutti
+            </h1>
+            <h2>Desenvolvedora & Amante de MPB</h2>
+            <div class="social-icons">
+                <a href="https://github.com/LauraPechutti"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre"><i class="fas fa-user"></i> Sobre</a></li>
+            <li><a href="#projetos"><i class="fas fa-code"></i> Projetos</a></li>
+            <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+            <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sobre">
+            <h2><i class="fas fa-user"></i> Sobre Mim</h2>
+            <div class="sobre-content">
+               
+                <div class="bio">
+                    <p>Desenvolvedora front-end apaixonada por criar interfaces harmoniosas e funcionais.</p>
+                    
+                    <div class="tags">
+                        <span class="tag"><i class="fas fa-code"></i> Front-end</span>
+                        <span class="tag"><i class="fas fa-paint-brush"></i> UI/UX</span>
+                        <span class="tag"><i class="fas fa-music"></i> MPB</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2><i class="fas fa-code"></i> Meus Projetos</h2>
+            <div class="projects-grid" id="projects-container">
+                <!-- Projetos serão inseridos via JavaScript -->
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2><i class="fas fa-cogs"></i> Minhas Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Front-end</h3>
+                    <div class="skill" data-level="90"><span>HTML/CSS</span></div>
+                    <div class="skill" data-level="85"><span>JavaScript</span></div>
+                </div>
+               
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2><i class="fas fa-envelope"></i> Vamos Conversar</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="nome" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> Laura. Feito com <i class="fas fa-heart"></i> e código.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
